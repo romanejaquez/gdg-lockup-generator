@@ -1,0 +1,28 @@
+{
+    "hiResImgs": [
+        {
+            "name": "GDG Logo (color)",
+            "path": "./assets/resources/imgs/gdg-logo-color.svg"
+        },
+        {
+            "name": "GDG Logo (white)",
+            "path": "./assets/resources/imgs/gdg-logo-white.svg"
+        },
+        {
+            "name": "Google Cloud",
+            "path": "./assets/resources/imgs/google-cloud.svg"
+        },
+        {
+            "name": "Firebase",
+            "path": "./assets/resources/imgs/firebase-logo.svg"
+        },
+        {
+            "name": "Flutter Logo w/ Text",
+            "path": "./assets/resources/imgs/flutterio-ar21.svg"
+        },
+        {
+            "name": "Flutter Logo (Plain)",
+            "path": "./assets/resources/imgs/flutterio-icon.svg"
+        }
+    ]
+}

@@ -1,3 +1,17 @@
 <div class="gdg-page">
     <h1>Other Resources</h1>
+    <br/>
+    <div class="gdg-other-resources-section">
+        <h2>Logos</h2>
+        <div class="gdg-img-resources">
+            <ng-container *ngFor="let img of imgResourcesList">
+                <div class="gdg-img-resource-hires">
+                    <div class="gdg-img-resource-wrapper">
+                        <img src="{{ img.path }}" />
+                    </div>
+                    <div>{{ img.name }}</div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
 </div>

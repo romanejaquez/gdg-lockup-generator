@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="514.011" height="636.508" viewBox="0 0 514.011 636.508">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_170" data-name="Path 170" d="M521.441,294.987,350.1,466.385l171.337,171.4H325.653l-171.4-171.4,171.4-171.4ZM325.653,1.275,7.43,319.5l97.924,97.924L521.441,1.275Z" transform="translate(-7.43 -1.275)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.197" y1="1.193" x2="0.699" y2="0.448" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1a237e" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#1a237e" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.028" cy="0.068" r="1.223" gradientTransform="matrix(1.238, 0, 0, -1, -2.189, -5.539)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="flutterio-icon" transform="translate(-7.43 -1.275)">
+    <g id="Group_82" data-name="Group 82" transform="translate(7.43 1.275)" clip-path="url(#clip-path)">
+      <path id="Path_169" data-name="Path 169" d="M22.2,202.2l97.863,97.924L389.322,30.805H193.535Z" transform="translate(124.688 262.907)" fill="#39cefd"/>
+    </g>
+    <g id="Group_83" data-name="Group 83" transform="translate(7.43 1.275)" clip-path="url(#clip-path)">
+      <path id="Path_171" data-name="Path 171" d="M325.653,1.275H521.441L105.354,417.423,7.43,319.5Z" transform="translate(-7.43 -1.275)" fill="#39cefd"/>
+    </g>
+    <g id="Group_84" data-name="Group 84" transform="translate(7.43 1.275)" clip-path="url(#clip-path)">
+      <path id="Path_173" data-name="Path 173" d="M32.037,145.962l73.474,73.413H301.3L129.962,48.037Z" transform="translate(212.712 417.072)" fill="#03569b"/>
+    </g>
+    <g id="Group_85" data-name="Group 85" transform="translate(7.43 1.275)" clip-path="url(#clip-path)">
+      <path id="Path_175" data-name="Path 175" d="M177.269,95.651,129.961,48.037,32.037,145.962Z" transform="translate(212.712 417.072)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_86" data-name="Group 86" transform="translate(7.43 1.275)" clip-path="url(#clip-path)">
+      <path id="Path_177" data-name="Path 177" d="M22.2,136.116l97.927-97.927,97.933,97.927-97.933,97.927Z" transform="translate(124.678 328.96)" fill="#16b9fd"/>
+    </g>
+    <path id="Path_179" data-name="Path 179" d="M521.441,294.987,350.1,466.385l171.337,171.4H325.653l-171.4-171.4,171.4-171.4ZM325.653,1.275,7.43,319.5l97.924,97.924L521.441,1.275Z" transform="translate(0 0)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

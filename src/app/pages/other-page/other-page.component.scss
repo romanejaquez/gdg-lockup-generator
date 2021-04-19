@@ -1,0 +1,26 @@
+
+.gdg-img-resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .gdg-img-resource-hires {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        .gdg-img-resource-wrapper {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            display: flex;
+    
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
