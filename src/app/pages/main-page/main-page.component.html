@@ -1,0 +1,53 @@
+<div class="gdg-page">
+    <h1>GDG Lockup Generator</h1>
+    <br/>
+    <input class="gdg-lockup-input" placeholder="Type the name of your GDG Chapter" type="text" [(ngModel)]="generatedName" />
+    <br/>
+    <br/>
+    <input class="gdg-slider" type="range" min="1" max="10" step="0.05" [(ngModel)]="size" />
+    <br/>
+    <label class="gdg-lockup-ckb">With Transparent Background: <input type="checkbox" [(ngModel)]="transparentBg" /></label>
+    <label class="gdg-lockup-ckb">Show <b>Google Developer Group</b> <input type="checkbox" [(ngModel)]="showGDGLong" /></label>
+    <label class="gdg-lockup-ckb">Show Vertical Layout <input type="checkbox" [(ngModel)]="showVertical" /></label>
+    <label class="gdg-lockup-ckb">Show Centered <input type="checkbox" [(ngModel)]="showCentered" /></label>
+    <br/>
+    <div class="gdg-lockup-area-common" id="gdg-lockup-area" [ngStyle]="{ 
+        'background-color': transparentBg ? 'transparent' : '#FFF',
+        'align-items': showGDGLong ? 'start' : 'center',
+        'display': showVertical ? 'block' : 'flex',
+        'text-align': showCentered ? 'center' : 'start'
+    }">
+        <img src="./assets/imgs/gdg_color.svg" />
+        <div class="gdg-lockup-text">
+            <div class="gdg-lockup-title" *ngIf="showGDGLong">Google Developer Group</div>
+            <div class="gdg-lockup-name-generated" [ngStyle]="{ 'font-size': size + 'em' }">{{ generatedName }}</div>
+        </div>
+    </div>
+    <br/>
+    <button class="gdg-lockup-btn" (click)="onSaveLockup('gdg-lockup-area', 'png')">Save as PNG</button>
+    <button class="gdg-lockup-btn" (click)="onSaveLockup('gdg-lockup-area', 'svg')">Save as SVG</button>
+    <button class="gdg-lockup-btn" (click)="onSaveLockup('gdg-lockup-area', 'jpeg')">Save as JPEG</button>
+    
+    <br/>
+    <h1>With Color:</h1>
+    <br/>
+    Background Color: <input type="color" [(ngModel)]="color" />
+    <br/>
+    <br/>
+    <div class="gdg-lockup-area-common" id="gdg-lockup-area-color" [ngStyle]="{ 
+        'background-color': color, 
+        'align-items': showGDGLong ? 'start' : 'center',
+        'display': showVertical ? 'block' : 'flex',
+        'text-align': showCentered ? 'center' : 'start'
+    }">
+        <img src="./assets/imgs/gdg_white.svg" />
+        <div class="gdg-lockup-text">
+            <div class="gdg-lockup-title" *ngIf="showGDGLong">Google Developer Group</div>
+            <div class="gdg-lockup-name-generated" [ngStyle]="{ 'font-size': size + 'em' }">{{ generatedName }}</div>
+        </div>
+    </div>
+    <br/>
+    <button class="gdg-lockup-btn" (click)="onSaveLockup('gdg-lockup-area-color', 'png')">Save as PNG</button>
+    <button class="gdg-lockup-btn" (click)="onSaveLockup('gdg-lockup-area-color', 'svg')">Save as SVG</button>
+    <button class="gdg-lockup-btn" (click)="onSaveLockup('gdg-lockup-area-color', 'jpeg')">Save as JPEG</button>
+</div>

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'ProductSansBold';
+    src: url('./assets/fonts/Product Sans Bold.ttf');
+}
+
+@font-face {
+    font-family: 'ProductSansItalic';
+    src: url('./assets/fonts/Product Sans Italic.ttf');
+}
+
+@font-face {
+    font-family: 'ProductSansRegular';
+    src: url('./assets/fonts/Product Sans Regular.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'ProductSansRegular', sans-serif;
+}
+
+.gdg-page {
+    padding: 30px;
+
+    .gdg-lockup-btn {
+        border: none;
+        padding: 10px 20px;
+        color: #FFF;
+        background: rgb(72, 132, 244);
+        margin: 0px 5px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: 'ProductSansRegular', sans-serif;
+    }
+
+    .gdg-lockup-ckb {
+        margin: 5px 100px 0px 0px;
+        display: inline-block;
+    }
+
+    .gdg-slider {
+        margin: 5px 0px;
+        display: block;
+    }
+
+    .gdg-lockup-input {
+        padding: 10px;
+        border-radius: 20px;
+        min-width: 300px;
+        border: 1px solid grey;
+    }
+}

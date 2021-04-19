@@ -1,0 +1,35 @@
+.gdg-lockup-area-common {
+    display: flex;
+    width: 800px;
+    padding: 30px;
+
+    img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .gdg-lockup-text {
+        margin-left: 20px;
+        font-size: 2em;
+
+        .gdg-lockup-name-generated {
+            font-size: 2em;
+        }
+    }
+}
+
+.gdg-lockup-transparent-ckb {
+    margin-right: 100px !important;
+}
+
+#gdg-lockup-area {
+    .gdg-lockup-text {
+        color: grey;
+    }
+}
+
+#gdg-lockup-area-color {
+    .gdg-lockup-text {
+        color: #FFF;
+    }
+}
