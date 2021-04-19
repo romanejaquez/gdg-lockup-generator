@@ -5,6 +5,10 @@ This is a web app created for all GDGs (Google Developer Groups) to facilitate i
 ### Building the Project for deployment:
 Run the following command at the root of the project:
 ```
+npm run build
+```
+which executes the following command:
+```
 ng build --prod --baseHref="/gdg-lockup-generator/"
 ```
 

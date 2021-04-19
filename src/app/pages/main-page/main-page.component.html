@@ -4,13 +4,21 @@
     <input class="gdg-lockup-input" placeholder="Type the name of your GDG Chapter" type="text" [(ngModel)]="generatedName" />
     <br/>
     <br/>
-    <input class="gdg-slider" type="range" min="1" max="10" step="0.05" [(ngModel)]="size" />
+    <label><input type="checkbox" [(ngModel)]="showOptions" /> Show Options</label>
     <br/>
-    <label class="gdg-lockup-ckb">With Transparent Background: <input type="checkbox" [(ngModel)]="transparentBg" /></label>
-    <label class="gdg-lockup-ckb">Show <b>Google Developer Group</b> <input type="checkbox" [(ngModel)]="showGDGLong" /></label>
-    <label class="gdg-lockup-ckb">Show Vertical Layout <input type="checkbox" [(ngModel)]="showVertical" /></label>
-    <label class="gdg-lockup-ckb">Show Centered <input type="checkbox" [(ngModel)]="showCentered" /></label>
     <br/>
+    <section class="gdg-lockup-options-container" *ngIf="showOptions">
+        <label>Change size of Chapter Name: <input class="gdg-slider" type="range" min="1" max="10" step="0.05" [(ngModel)]="size" /></label>
+        <br/>
+        <label class="gdg-lockup-ckb">With Transparent Background: <input type="checkbox" [(ngModel)]="transparentBg" /></label>
+        <br/>
+        <label class="gdg-lockup-ckb">Show <b>Google Developer Group</b> <input type="checkbox" [(ngModel)]="showGDGLong" /></label>
+        <br/>
+        <label class="gdg-lockup-ckb">Show Vertical Layout <input type="checkbox" [(ngModel)]="showVertical" /></label>
+        <br/>
+        <label class="gdg-lockup-ckb">Show Centered <input type="checkbox" [(ngModel)]="showCentered" /></label>
+        <br/>
+    </section>
     <div class="gdg-lockup-area-common" id="gdg-lockup-area" [ngStyle]="{ 
         'background-color': transparentBg ? 'transparent' : '#FFF',
         'align-items': showGDGLong ? 'start' : 'center',
