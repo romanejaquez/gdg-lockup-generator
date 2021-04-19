@@ -2,6 +2,13 @@
 
 This is a web app created for all GDGs (Google Developer Groups) to facilitate in generating lockups / logos and images, using their GDG chapter name.
 
+### Building the Project for deployment:
+Run the following command at the root of the project:
+```
+ng build --prod --baseHref="/gdg-lockup-generator/"
+```
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
 ## Development server
